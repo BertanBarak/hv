@@ -3,29 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dijital Kartvizit</title>
+
+    <title>Hakan Volkan Kuyumculuk</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: Georgia, "Times New Roman", serif;
+            background: #eee4d6;
+            color: #3b3026;
+            display: flex;
+            justify-content: center;
+            padding: 30px 18px;
+        }
+
+        .card {
+            width: 100%;
+            max-width: 430px;
+            text-align: center;
+        }
+
+        .logo {
+            width: 150px;
+            height: 150px;
+            object-fit: contain;
+            margin: 10px auto 18px;
+        }
+
+        .brand {
+            font-size: 27px;
+            letter-spacing: 5px;
+            margin: 0;
+            font-weight: normal;
+        }
+
+        .subtitle {
+            margin-top: 10px;
+            font-size: 13px;
+            letter-spacing: 4px;
+            color: #9a7132;
+        }
+
+        .line {
+            width: 70px;
+            height: 1px;
+            background: #b08a4a;
+            margin: 22px auto 28px;
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 13px;
+        }
+
+        .button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 62px;
+            padding: 12px 18px;
+            border: 1px solid #c7aa78;
+            border-radius: 14px;
+            background: rgba(255, 250, 242, 0.65);
+            color: #3b3026;
+            text-decoration: none;
+            font-size: 16px;
+            letter-spacing: 1px;
+            transition: 0.2s;
+        }
+
+        .button:hover {
+            background: #f8efe2;
+            transform: translateY(-1px);
+        }
+
+        .icon {
+            font-family: Arial, sans-serif;
+            font-size: 21px;
+            margin-right: 12px;
+        }
+
+        .address {
+            margin-top: 25px;
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            line-height: 1.6;
+            color: #75685b;
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 11px;
+            letter-spacing: 2px;
+            color: #a58b67;
+        }
+    </style>
 </head>
+
 <body>
 
-    <h1>Merhaba 👋</h1>
+<div class="card">
 
-    <p>QR kod sayfam çalışıyor!</p>
+    <!-- LOGO -->
+    <img src="logo.png" alt="Hakan Volkan Kuyumculuk" class="logo">
 
-    <p>
-        <a href="tel:+905555555555">📞 Telefon</a>
-    </p>
+    <h1 class="brand">HAKAN VOLKAN</h1>
 
-    <p>
-        <a href="https://www.instagram.com/" target="_blank">
-            📷 Instagram
+    <div class="subtitle">
+        KUYUMCULUK
+    </div>
+
+    <div class="line"></div>
+
+
+    <div class="buttons">
+
+        <!-- KONUM -->
+        <a
+            class="button"
+            href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x14d34e55a147fdb5:0xa214d39268bbeb31?sa=X%26ved=1t:8290%26ictx=111"
+            target="_blank"
+        >
+            <span class="icon">⌖</span>
+            Mağazaya Yol Tarifi
         </a>
-    </p>
 
-    <p>
-        <a href="https://maps.google.com/" target="_blank">
-            📍 Konum
+
+        <!-- TELEFON -->
+        <a
+            class="button"
+            href="tel:+903124343229"
+        >
+            <span class="icon">☎</span>
+            (0312) 434 32 29
         </a>
-    </p>
+
+
+        <!-- INSTAGRAM -->
+        <a
+            class="button"
+            href="https://www.instagram.com/hakanvolkanmucevherat/"
+            target="_blank"
+        >
+            <span class="icon">◎</span>
+            Instagram
+        </a>
+
+    </div>
+
+
+    <div class="address">
+        67/113 Atatürk Bulvarı &amp; Büyük Çarşı<br>
+        Kızılay Mahallesi, Çankaya / Ankara<br>
+        06420
+    </div>
+
+
+    <div class="footer">
+        HAKAN VOLKAN KUYUMCULUK
+    </div>
+
+</div>
 
 </body>
 </html>
